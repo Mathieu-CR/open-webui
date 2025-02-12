@@ -100,6 +100,7 @@
 					img.onload = function () {
 						const canvas = document.createElement('canvas');
 						const ctx = canvas.getContext('2d');
+						
 
 						// Calculate the aspect ratio of the image
 						const aspectRatio = img.width / img.height;
@@ -124,6 +125,8 @@
 
 						// Draw the image on the canvas
 						ctx.drawImage(img, offsetX, offsetY, newWidth, newHeight);
+						ctx.fillStyle = '#8B00FF';
+    					ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 						// Get the base64 representation of the compressed image
 						const compressedSrc = canvas.toDataURL('image/jpeg');
