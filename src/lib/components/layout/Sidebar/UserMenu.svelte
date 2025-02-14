@@ -156,7 +156,7 @@
 			<button
   				class="flex rounded-md py-2 px-3 w-full hover:bg-gray-50 dark:hover:bg-gray-800 transition"
   				on:click={() => {
-    				window.open('http://localhost:6333', '_blank');}}
+    				window.open('http://localhost:6333/dashboard', '_blank');}}
 		>
 		<div class="self-center mr-3">
 			<svg
